@@ -136,10 +136,15 @@
   data-button="botao1"
   class="bg-[#0057D9] text-white px-4 py-2 rounded-full font-semibold text-sm whitespace-nowrap pulse-animation"
   style="max-width: 100%; display: inline-block; text-align: center;"
+  onclick="fbq('track', 'Lead'); gtag('event', 'agendamento_logzz', {
+      event_category: 'lead',
+      event_label: 'botao_topo_1'
+  }); setTimeout(function(){ window.location.href = 'https://entrega.logzz.com.br/pay/memw862p4/rcgps-produtor'; }, 300); return false;"
+  title="Agendar entrega"
+  aria-label="Agendar entrega"
 >
   Agendar entrega
 </a>
-
         </div>
     </header>
 
