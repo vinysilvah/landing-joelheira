@@ -130,9 +130,16 @@
                 <a href="#indicacoes" class="text-gray-600 hover:text-primary transition" onclick="event.preventDefault(); document.getElementById('indicacoes').scrollIntoView({behavior: 'smooth'});">Indicações</a>
                 <a href="#contato" class="text-gray-600 hover:text-primary transition" onclick="event.preventDefault(); document.getElementById('contato').scrollIntoView({behavior: 'smooth'});">Contato</a>
             </nav>
-            <a href="https://entrega.logzz.com.br/pay/memw862p4/rcgps-produtor" class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full font-medium transition pulse-animation">
-                Agendar entrega
-            </a>
+            <a href="https://entrega.logzz.com.br/pay/memw862p4/rcgps-produtor"
+   class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full font-medium transition pulse-animation"
+   onclick="fbq('track', 'Lead'); gtag('event', 'agendamento_logzz', {
+       event_category: 'lead',
+       event_label: 'botao_topo_1'
+   }); setTimeout(function(){ window.location.href = 'https://entrega.logzz.com.br/pay/memw862p4/rcgps-produtor'; }, 300); return false;"
+   title="Agendar entrega"
+   aria-label="Agendar entrega">
+   Agendar entrega
+</a>
         </div>
     </header>
 
