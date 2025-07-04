@@ -649,18 +649,30 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Fale Conosco</h2>
             <p class="text-xl text-gray-600 mb-8">Fale com um especialista e tire suas dúvidas agora mesmo.</p>
-            <a href="https://wa.me/message/OHTJNKHLV3RPN1" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full transition">
-                <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-            </a>
+           <a href="https://wa.me/message/OHTJNKHLV3RPN1" 
+   class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full transition"
+   onclick="fbq('track', 'Contact'); gtag('event', 'clique_whatsapp', {
+       event_category: 'contato',
+       event_label: 'whatsapp_principal'
+   }); setTimeout(function(){ window.location.href = 'https://wa.me/message/OHTJNKHLV3RPN1'; }, 300); return false;">
+   <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+</a>
         </div>
     </section>
 
     <!-- Floating WhatsApp Button -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/message/OHTJNKHLV3RPN1" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition group">
-            <i class="fab fa-whatsapp text-3xl"></i>
-            <span class="absolute right-full mr-2 px-2 py-1 bg-green-500 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition">Falar com Especialista</span>
-        </a>
+        <a href="https://wa.me/message/OHTJNKHLV3RPN1" 
+   class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition group"
+   onclick="fbq('track', 'Contact'); gtag('event', 'clique_whatsapp', {
+       event_category: 'contato',
+       event_label: 'whatsapp_fluante'
+   }); setTimeout(function(){ window.location.href = 'https://wa.me/message/OHTJNKHLV3RPN1'; }, 300); return false;">
+   <i class="fab fa-whatsapp text-3xl"></i>
+   <span class="absolute right-full mr-2 px-2 py-1 bg-green-500 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition">
+      Falar com Especialista
+   </span>
+</a>
     </div>
 
     <!-- Footer -->
@@ -693,7 +705,14 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fab fa-whatsapp mr-2 opacity-80"></i>
-                            <a href="https://wa.me/message/OHTJNKHLV3RPN1" class="opacity-80 hover:opacity-100 transition">Falar com Especialista</a>
+                           <a href="https://wa.me/message/OHTJNKHLV3RPN1" 
+   class="opacity-80 hover:opacity-100 transition"
+   onclick="fbq('track', 'Contact'); gtag('event', 'clique_whatsapp', {
+       event_category: 'contato',
+       event_label: 'whatsapp_rodape'
+   }); setTimeout(function(){ window.location.href = 'https://wa.me/message/OHTJNKHLV3RPN1'; }, 300); return false;">
+   Falar com Especialista
+</a>
                         </li>
                     </ul>
                 </div>
